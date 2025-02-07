@@ -1,0 +1,399 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing:border-box;
+}
+html,body
+{
+
+width:100%;
+height:100%;
+}
+.root
+{
+    height:100%;
+    width:100vw;
+    border-radius:0px 0px 150px 0px;
+    border:1px solid purple;  
+background:purple;
+}
+.symbol1
+{
+    
+    background-color: rgb(138, 95, 138);
+   border:1px solid rgb(138, 95, 138);
+   border-radius:50%; 
+   height:40px;
+    width:40px;
+    right:94%;
+    position:absolute;
+    top:70%;
+    color:white;
+    align-items:center;
+    display:flex;
+    justify-content: space-around;
+    font-size: 1.5rem;
+
+}
+.symbol2
+{
+    
+    background-color:rgb(138, 95, 138);
+   border:1px solid rgb(138, 95, 138);
+   border-radius:50%; 
+   height:40px;
+    width:40px;
+    position:absolute;
+    margin-left:90%;
+    right:94%;
+    top:80%;
+    color:white;
+    align-items:center;
+    display:flex;
+    justify-content: space-around;
+    font-size: 1.5rem;
+
+}
+header 
+{
+    display: flex;
+    margin-top:2%;
+justify-content: space-between;
+color:white;
+width:100%;
+}
+::placeholder
+{
+    color:white;
+    opacity:0.5;
+}
+#searchbox
+{
+    background: rgb(138, 95, 138);
+    border-radius: 30px 30px 30px 30px;
+    color:white;
+}
+a{
+    position:relative;
+    left:2%;
+    display:flex;
+    text-decoration:none;
+    color:white;
+    font-weight:bold;
+    font-size:1.3em;
+    text-transform:capitalize;
+}
+ul
+{
+    list-style-type:none;
+    display:flex;
+    justify-items: center;
+    gap:30px;
+    
+}
+#menu
+{
+    display:none;
+}
+#check
+{
+    display:none;
+}
+.symbol1,.symbol2
+{
+border-radius:50%;
+
+}
+.container
+{
+    position:absolute;
+    top:10%;
+    left:7.5%;
+    background:url(diary.jpeg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    border-radius:3%;
+color:white;
+height:80%;
+width:88%;
+}
+.ourcourses
+{
+    
+    padding:10%;
+    font-size:1.5rem;
+    font-weight:bold;
+    position:absolute;
+    top:7%;
+    left:8%;
+    height:30px;
+    width:200px;
+    border:1px solid transparent;
+    background-color:purple;
+    padding:10px 0px 10px 0px;
+    border-radius:10px;
+    display:flex;
+    justify-content: space-evenly;
+    align-items:center;
+    
+}
+.h1{
+    top:20%;
+position:absolute;    
+left:8%;
+font-size: 3rem;
+}
+.h2
+{
+    top:28%;
+    position:absolute;    
+    left:8%; 
+    font-size: 3rem;
+}
+.p1
+{
+    
+    top:50%;
+    position:absolute;
+    left:8%;  
+    font-size:1rem;
+}
+.p2
+{
+    
+    top:55%;
+    position:absolute;
+    left:8%;  
+    font-size:1rem;
+}
+
+#reqdemo
+{
+position:absolute;
+top:70%;
+left:8%;
+font-size:1.5rem;
+    font-weight:bold;
+    background-color:white;
+   border:1px solid white;
+   border-radius:10px; 
+    height:30px;
+    width:200px;
+    display:flex;
+    align-items:center;
+    justify-content: space-evenly;
+    color:purple;
+    justify-items: center;
+    
+}
+#playbutton
+{
+background-color:white;
+border:1px solid white;
+border-radius:50%; 
+height:40px;
+ width:40px;
+ display:flex;
+ align-items:center;
+justify-content: space-evenly;
+ color:purple;
+position:absolute;
+top:70%;
+left:27%;
+
+}
+#whatsscholar
+{
+display:flex;
+color:white;
+position:absolute;
+top:71%;
+left:32%;
+font-size:1.5rem;
+    font-weight:bold;
+justify-items: center;
+}
+#menu
+{
+    display:none;
+}
+label
+{
+    display:none;
+}
+@media(max-width:450px)
+{
+header
+{
+    font-size:1rem;
+    justify-content: space-between;
+    
+}
+ul
+{
+    flex-direction: column;
+    list-style-type: none;
+    align-items:center;
+    justify-content: center;
+} 
+nav
+{
+    border:1px solid;
+    width:100vw;
+    position:absolute;
+    left:5px;
+    top:3px;
+    max-height:auto;
+    background-color:rgb(54, 51, 54);
+    padding:30px;
+    display:flex;
+    align-items:center;
+    left:100%;
+    }   
+
+       
+
+#menu
+{
+    position:absolute;
+    right:5%;
+    display:flex;
+    font-size:1.5em;
+    cursor:pointer;
+}
+label 
+{
+    display:flex;
+}
+.ourcourses
+{
+    z-index:0;
+}
+#searchicon
+{
+    position:relative;
+    right:20px;
+}
+#check:checked~nav
+{
+
+position:absolute;
+    z-index:1;
+    left:0;
+top:5%;
+}
+#check
+{
+    display:none;
+}
+.ourcourses
+{
+    
+ 
+    font-size:1rem;
+    position:absolute;
+    top:10%;
+    left:8%;
+    height:20px;
+    width:150px;
+}
+.h1{
+    top:22%;
+position:absolute;    
+left:8%;
+font-size: 2rem;
+}
+.h2
+{
+    top:35%;
+    position:absolute;    
+    left:8%; 
+    font-size: 2rem;
+}
+.p1
+{
+    
+    top:45%;
+    position:absolute;
+    left:8%;  
+    font-size:1.3rem;
+}
+.p2
+{
+    
+    top:55%;
+    position:absolute;
+    left:8%;  
+    font-size:1.3rem;
+}
+
+#reqdemo
+{
+    
+position:absolute;
+top:75%;
+left:8%;
+font-size:1rem;
+    font-weight:bold;
+    background-color:white;
+   border:1px solid white;
+   border-radius:10px; 
+    height:20px;
+    width:150px;
+    display:flex;
+    align-items:center;
+    justify-content: space-evenly;
+    color:purple;
+    justify-items: center;
+    
+}
+#playbutton
+{
+background-color:white;
+border:1px solid white;
+border-radius:50%; 
+height:30px;
+ width:30px;
+ display:flex;
+ align-items:center;
+justify-content: space-evenly;
+ color:purple;
+position:absolute;
+top:83%;
+left:8%;
+
+}
+#whatsscholar
+{
+display:flex;
+color:white;
+position:absolute;
+top:93%;
+left:8%;
+font-size:1rem;
+    font-weight:bold;
+justify-items: center;
+}
+.container
+{
+    height:80%;
+    width:84%;
+    margin-left:5%;
+}
+.symbol1
+{
+    height:30px;
+    width:30px;
+    right:92%;
+    position:absolute;
+    top:80%;
+}
+.symbol2
+{
+    height:30px;
+    width:30px;
+    right:92%;
+    position:absolute;
+    top:85%;
+}
+}
